@@ -18,7 +18,8 @@ h1 {
   justify-content: space-between;
   align-items: center;
   background-color: #fdf2e9;
-  
+  padding-left: 20rem;
+  padding-top: 3rem;
 
   /* Because we want header to be sticky later*/
   height: 9.6rem;
@@ -28,10 +29,12 @@ h1 {
 .logo {
   height: 9.7rem;
   padding-left: 4px;
+  width: 18rem;
 }
 
 .main-nav {
   padding-left: 3px;
+  padding-top: 2px;
 }
 
 .main-nav-list {
@@ -76,6 +79,7 @@ h1 {
 .section-hero {
   background-color:  #fdf2e9 ;
   padding: 9.6rem 0;
+  padding-left: 20rem;
 }
 
 .hero {
@@ -120,7 +124,8 @@ h1 {
 .heading-secondary {
   font-weight: 700;
   color: #333;
-  color: #45260a;
+ /* color: #45260a;*/
+ /* color: #343a40;*/
   letter-spacing: -0.5px;
 }
 .heading-primary {
@@ -134,7 +139,14 @@ h1 {
   line-height: 1.2;
 }
 
-
+.subheading {
+  display: block;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #e67e22;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+}
 
 .hero-description {
   font-size: 2rem;
@@ -162,7 +174,7 @@ h1 {
   transition: background-color 0.3s ;
 }
 .btn:hover {
-  background-color: orange;
+  background-color: #cf711f;
   color: black;
   border-radius: 9px;
   padding: 1.6rem 3.2rem;
@@ -224,17 +236,17 @@ button {
 
 .delivered-imgs {
   display: flex;
+  
 }
 
 .delivered-imgs img {
   height: 4.8rem;
   width: 4.8rem;
   border-radius: 50%;
-  margin-left: -1.6rem;
   border: 3px solid white;
 }
 .delivered-imgs img {
-  margin: 0;
+  margin-left: -0.5px;
 }
 
 .delivered-text {
@@ -252,7 +264,7 @@ button {
 /************************************/
 .section-how {
     padding: 9.6rem 0;
-    
+    margin-left: 25rem;    
 }
 
 .step-img {
