@@ -9,6 +9,16 @@ body {
   background-size: cover;
 }
 
+.script {
+  position: absolute;
+  top: 2rem;
+  right: 6rem;
+  color: aqua;
+  background-color: brown;
+  font-weight: 900;
+  font-size: larger;
+}
+
 .header  {
   display: flex;
   justify-content: space-between;
@@ -106,7 +116,7 @@ body {
   display: grid;
   column-gap: 6.4rem;
   row-gap: 9.6rem;
-  
+
   align-items: center;
 }
 
@@ -119,6 +129,7 @@ body {
 .grid--4--cols {
   grid-template-columns: repeat(4, 1fr);
 }
+
 
 .heading-primary,
 .heading-secondary {
@@ -274,8 +285,8 @@ button {
 /* HOW IT WORKS SECTION */
 /************************************/
 .section-how {
-  padding-left: 8rem ;
-  padding-right: 2.5rem;
+  padding-left: 14rem ;
+  padding-right: 12rem;
   padding-top: 4rem;
   margin-left: 25resm;    
 }
@@ -292,10 +303,27 @@ button {
   line-height: 1.8;
 }
 .step-img {
-  width: 30%;
+  width: 35%;
+  z-index: 10;
 }
 .step-img-box {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.step-img-box::before {
+  content: "";
+  display: block;
+  width: 60%;
+  /*height: 60%;*/
+
+  /* 60% 0f parent's width */
+  padding-bottom: 60%;
+  background-color: #fdf2e9;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
