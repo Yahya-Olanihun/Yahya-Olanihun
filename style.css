@@ -257,6 +257,7 @@ button {
 
 .delivered-imgs {
   display: flex;
+align-items: center;
   
 }
 
