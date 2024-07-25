@@ -25,7 +25,7 @@ body {
   align-items: center;
   background-color: #fdf2e9;
   padding-left: 20rem;
-  padding-top: 3rem;
+  padding-top: 0;
 
   /* Because we want header to be sticky later*/
   height: 9.6rem;
@@ -240,9 +240,8 @@ body {
 }
 .hero-img {
   width: 100%;
-  cursor: cell;
-  
 }
+
 .margin-right-sn {
   background-color: white;
 }
@@ -250,6 +249,7 @@ body {
 .margin-right-sn:hover {
   background-color: #e2d1d1;
 }
+
 button {
   background-color: oldlace;
 }
@@ -285,7 +285,32 @@ align-items: center;
   color: #cf711f;
   font-weight: 700;
 }
+/*********************************/
+/* FEATURED IN SECTION*/
+/*********************************/
 
+.section-featured-in {
+  padding: 4.8rem 0;
+}
+
+.heading-featured-in {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 500; 
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  height: 48%;
+}
+.gogo img {
+  height: 3.2rem;
+}
 
 /************************************/
 /* HOW IT WORKS SECTION */
@@ -294,7 +319,7 @@ align-items: center;
   padding-left: 14rem ;
   padding-right: 12rem;
   padding-top: 4rem;
-  margin-left: 25resm;    
+  margin-left: 8rem;    
 }
 
 .step-number {
