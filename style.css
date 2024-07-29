@@ -396,12 +396,14 @@ position: relative;
     color: #333;
     font-weight: 600;
     margin-bottom: 3.2rem;
+    
   }
 
   .meal-attributes {
     list-style: none;
     display: flex; 
     flex-direction: column;
+    gap: 2rem; 
   }
 
   .meal-attribute {
