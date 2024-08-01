@@ -388,7 +388,10 @@ position: relative;
 
   .section-meals {
     padding: 9.6rem 0;
-    padding-left: 18rem;
+    padding-left: 9rem;
+  }
+  .meal-tags {
+    margin-bottom: 1.8rem;
   }
 
   .meal-title {
@@ -397,6 +400,17 @@ position: relative;
     font-weight: 600;
     margin-bottom: 3.2rem;
     
+  }
+
+  .tag {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    background-color: #51cf66;
+    color: #333;
+    border-radius: 100px ;
+    font-weight: 600;
   }
 
   .meal-attributes {
@@ -408,8 +422,34 @@ position: relative;
 
   .meal-attribute {
     font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
   }
-
+ 
+  .meal {
+      box-shadow: 0 4.4rem 4.8rem rgba(0, 0, 0, 0.1);
+      border-radius: 11px;
+      overflow: hidden;
+     
+    }
+  .meal-content {
+    padding: 3.2rem 4.8rem 4.8rem 4.8rem; 
+  }
+  
   .meal-img {
-    width: 50%;
+    width: 100%;
   }
+  .meal-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+    color: #e67e22;
+}
+
+  .hydrated {
+    visibility: inherit;
+}
+
+  strong {
+  font-weight: 500;
+}
