@@ -90,9 +90,22 @@ body {
 .section-hero {
   background-color:  #fdf2e9 ;
   padding: 9.6rem 0;
-  padding-left: 18rem;
+  padding-left: 11rem;
   padding-right: 6rem;
 }
+
+@media (max-width: 600px) {
+  .section-hero {
+    border: 20px dashed blue;
+    background-color: blue;
+  }
+}
+@media (max-width: 1200px) {
+  .section-hero {
+    background-color: orangered;
+  }
+}
+
 
 .hero {
   max-width: 130rem;
@@ -549,13 +562,19 @@ position: relative;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-
-  .gallery-item:hover {
-    transform: translateY(-0.8rem);
-    transition: all 0.3s;
+  .gallery-item {
+    overflow: hidden;
   }
+
   .gallery-item img {
     display: block;
     width: 80%;
     height: 80%;
+    margin: -0.19rem;
+    border: 2px solid white;
+    transition: all 0.4s;
   }
+
+  .gallery-item img:hover {
+    transform: scale(+1.1);
+  } 
