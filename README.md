@@ -3,7 +3,7 @@
 - 🌱 I’m currently learning Frontend web development
 - 💞️ I’m looking to collaborate on more frontend projects
 - 📫 How to reach me : yahyaolanihun2011@gmail.com
-- 😄 Pronouns: ...
+- 😄 Pronouns: He
 - ⚡ Fun fact: ...
 
 <!---
