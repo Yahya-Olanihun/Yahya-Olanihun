@@ -7,7 +7,13 @@
 }
 
 @media (max-width: 45em) {
-  body {
-    max-width: 45em;
+  .header {
+    background-color: #fdf2e9;
+  }
+  .logo {
+    background-color: white;
+  }
+  .hero-img {
+    width: 100%;
   }
 }

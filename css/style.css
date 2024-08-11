@@ -30,10 +30,8 @@ body {
   /* Because we want header to be sticky later*/
   height: 9.6rem;
   padding: 0 4.8rem;
-  position: sticky;
   top: 0;
   
-  z-index: 10;
   
 }
 
@@ -96,13 +94,12 @@ body {
 
 @media (max-width: 600px) {
   .section-hero {
-    border: 20px dashed blue;
-    background-color: blue;
+    background-color: #fdf2e9;
+    background-size: contain;
   }
 }
 @media (max-width: 1200px) {
   .section-hero {
-    background-color: orangered;
   }
 }
 
