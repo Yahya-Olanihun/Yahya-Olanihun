@@ -1,3 +1,4 @@
+<<<<<<< HEAD:css/style.css
 html {
   font-size: 62.5%;
 }
@@ -575,3 +576,156 @@ position: relative;
   .gallery-item img:hover {
     transform: scale(+1.1);
   } 
+=======
+body {
+background-color: cornsilk;
+height: 100vh;
+margin: 0;
+background: none;
+}
+
+.main-nav-bar {
+  font-size: x-large;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  padding-left: 920px;
+  color: white;
+  background-color: black;
+  background-size: contain;
+  list-style: none;
+}
+.main-nav-list {
+  color: white;
+  padding: 1.5rem;
+  border: 2px solid white;
+  transition: all 0.2s;
+}
+.main-nav-list:link,
+.main-nav-list:visited {
+  color: white;
+  padding: 1.5rem;
+  border: 2px solid white;
+}
+.main-nav-list:hover {
+  color: black;
+  background-color: white;
+}
+h1 {
+font-weight: 400;
+font-size: xx-large;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+align-items: center;
+font-size: xx-large;
+color: darkorange;
+margin-left: 20%;
+margin-bottom: 3rem;
+}
+h3 {
+  font-weight: 400;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  align-items: center;
+  font-size: x-large;
+  color: rgba(163, 93, 76, 0.568);
+  margin-left: 20%;
+  margin-bottom: none;
+  }
+
+.divv {
+  width: 600px;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s;
+  margin-left: 5%;
+  margin-right: 50%;
+  margin-top: 4%;
+  border-radius: 6px;
+}
+
+input {
+  width: 60%;
+  margin-top: 1rem;
+  font-size: x-large;
+  font-weight: 500;
+  font-family: monospace;
+}
+input[type="email"] {
+  width: 80%;
+  margin-top: 1rem;
+  font-size: large;
+  font-weight: 500;
+  font-family: monospace;
+}
+button {
+  background-color: white;
+  color: black;
+  padding: 0.8rem;
+  font-size: x-large;
+  font-style: normal;
+  border-radius: 6px;
+  font-weight: 400;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+button:link,
+button:visited {
+  background-color: none;
+  border: 2px solid white;
+  color: black;
+  padding: 0.8rem;
+  font-size: x-large;
+  border-radius: 6px;
+  font-weight: 400;
+  align-items: center;
+}
+
+button:hover {
+  background-color: #aaa;
+  border: 2px solid blueviolet;
+  padding: 0.82rem;
+  font-size: 200;
+  border-radius: 6px;
+  font-weight: 400;
+  align-items: center;
+}
+
+
+.btn {
+  background-color: rgb(185, 29, 29);
+  color: black;
+  padding: 0.8rem;
+  font-size: x-large;
+  font-style: normal;
+  border-radius: 6px;
+  font-weight: 400;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.btn:link,
+.btn:visited {
+  background-color: none;
+  border: 2px solid white;
+  color: black;
+  padding: 0.8rem;
+  font-size: x-large;
+  border-radius: 6px;
+  font-weight: 400;
+  align-items: center;
+}
+
+.btn:hover {
+  background-color: red;
+  border: 2px solid blueviolet;
+  padding: 0.82rem;
+  font-size: 200;
+  border-radius: 6px;
+  font-weight: 400;
+  align-items: center;
+}
+
+
+>>>>>>> 371d1bf3afe5fcda065f984eb9a0d46fcdc16d3c:style.css
