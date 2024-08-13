@@ -49,6 +49,7 @@
   * {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    font-size: x-small;
   }
   .hero {
    max-width: 68.4rem; 
@@ -59,7 +60,7 @@
   .logo {
     height: 50%;
     width: 70%;
-
+    padding-left: 10px;
   }.main-nav {
     padding-left: 3px;
     padding-top: 2px;
@@ -162,7 +163,7 @@
     cursor: pointer;
     text-decoration: none;
     font-size: 1rem;
-    padding: 1rem 1rem;
+    padding: 1rem ;
     border-radius: 9px;
     margin-right: 1.6rem;
     margin: 5px;
@@ -196,5 +197,100 @@
     color: #cf711f;
     border-bottom: 1px solid transparent;
   }
+
+  .section-featured-in {
+    padding: 4rem 0 3rem;
+   
+  }
   
+  .heading-featured-in {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.45px;
+    font-weight: 400; 
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #888;
+  }
+  
+  .logos {
+    display: flex;
+    justify-content: space-around;
+  }
+  .logos img {
+    height: 5rem;
+    width: 8rem;
+    opacity: 20%;
+    justify-content: space-around;
+    margin: 1rem 3rem;
+  }
+  .gogo img {
+    height: 12%;
+    width: 12%;
+  }
+  /************************************/
+/* HOW IT WORKS SECTION */
+/************************************/
+.section-how {
+  padding-left: 14rem ;
+  padding-right: 12rem;
+  padding-top: 4rem;
+  margin-left: 8rem;    
+}
+
+.step-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem; 
+}
+
+.step-description {
+  font-size: 2rem;
+  line-height: 1.8;
+}
+.step-img {
+  width: 35%;
+  /* z-index: 10; */
+}
+.step-img-box {
+position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.step-img-box::before,
+.step-img-box::after {
+  content: "";
+  display: block;
+ 
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ 
+}
+
+.step-img-box::before {
+  width: 60%;
+
+  /* height: */ 
+
+  padding-bottom: 60%;
+  background-color: #fdf2e9;
+  z-index: -1; 
+  }
+
+  .step-img-box::after {
+    width: 45%;
+    padding-bottom: 45%;
+    background-color: #fae5d3;
+    z-index: -1;
+  }
+
 }
