@@ -50,4 +50,151 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+  .hero {
+   max-width: 68.4rem; 
+  }
+  .heading-primary {
+    /* font-size: ; */
+  }
+  .logo {
+    height: 50%;
+    width: 70%;
+
+  }.main-nav {
+    padding-left: 3px;
+    padding-top: 2px;
+    margin-right: 0.5px;
+  }
+  
+  .main-nav-list {
+    align-items: center;
+    list-style: none;
+    display: flex;     
+    margin-left: 3rem;
+    color: black;
+    gap: 3.2rem;
+    padding: 1rem 1rem;
+  }
+  
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 1.5rem;
+    transition: all 0.3s;
+    margin-top: 5px;
+  }
+  
+  .main-nav-link:hover,
+  .main-nav-link:active {
+    color: wheat;
+  }
+  
+  .main-nav-link:link
+  .main-nav-link:visited {
+    padding: 1.2rem 2.4rem;
+    border-radius: 9px;
+    color: #fff;
+    background-color: #e67e22;
+  }
+  
+  .main-nav-link:hover
+  .main-nav-link:active {
+    background-color: #cf711f;
+  
+  }
+  .section-hero {
+    background-color:  #fdf2e9 ;
+    padding: 9.6rem 0;
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  .hero-img {
+    width: 100%;
+  }
+
+  .hero-description {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+  
+  }
+  
+  .btn:link, 
+  .btn:visited {
+    display: inline-block ;
+    background-color: orangered;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 1rem 1rem;
+    border-radius: 9px;
+    margin-right: 1.6rem;
+    margin: 5px;
+   /* box-shadow: 0 20px 30px 0 
+    rgba(0, 0, 0, 0.07);*/
+   /* Put transition on original "state"*/
+    transition: background-color 0.3s ;
+  }
+  .btn:hover {
+    background-color: rgb(243, 50, 8);
+    color: black;
+    border-radius: 9px;
+    padding: 1rem 1rem;
+    /*border: 4px solid white;*/
+  
+   /* box-shadow: inset 0 0 8 3px #fff;*/
+  }
+  
+  
+  .butonn:link, 
+  .butonn:visited {
+    display: inline-block ;
+    background-color: white;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    border-radius: 9px;
+    margin-right: 1.6rem;
+    margin: 5px;
+   /* box-shadow: 0 20px 30px 0 
+    rgba(0, 0, 0, 0.07);*/
+   /* Put transition on original "state"*/
+    transition: background-color 0.3s ;
+  }
+  .butonn:hover {
+    background-color: #e2d1d1;
+    color: black;
+    border-radius: 9px;
+    padding: 1rem 1rem;
+    /*border: 4px solid white;*/
+  
+   /* box-shadow: inset 0 0 8 3px #fff;*/
+  }
+  .link:link,
+  .link:visited {
+    display: inline-block;
+    color: #e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    transition: all 0.3s;
+  
+  }
+  
+  .link:hover,
+  .link:active {
+    color: #cf711f;
+    border-bottom: 1px solid transparent;
+  }
+  
 }
