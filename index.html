@@ -14,19 +14,31 @@
 <body>
 
    
-   <header class="header">
-       <img  class="logo" alt="Omnifood logo" src="img folder/omnifood.jfif" title="Our brand's logo"
-    />
+   <header class="header nav-open">
+
+     <a href="#">
+
+      <img  class="logo" alt="Omnifood logo" src="img folder/omnifood.jfif" title="Our brand's logo"
+      />
+  
+     </a>
             <nav class="main-nav">
                <ul class="main-nav-list">
                 
                 <li><a href="#howitworks" class="main-nav-link">How it works</a></li>   
                 <li><a href="#meals" class="main-nav-link">Meals</a></li>   
-                <li><a href="#pricing" class="main-nav-link">Pricing</a></li>
-                <li><a href="#testimonials" class="main-nav-link">Testimonials</a></li>   
-                <li><a href="#t's&c's" class="main-nav-link nav-cta">T's & C's</a></li>
+                <li><a href="#pricing" class="main-nav-link">Testimonials</a></li>
+                <li><a href="#testimonials" class="main-nav-link">Pricing</a></li>   
+                <li><a href="#t's&c's" class="main-nav-link nav-cta">Try for free</a></li>
       </ul>
                </nav>
+
+               <button class="btn-mobile-nav">
+                <ion-icon class="icon-mobile-nav"
+                 name="menu-outline"></ion-icon>
+                <ion-icon class="icon-mobile-nav"
+                 name="close-outline"></ion-icon>
+               </button>
              </header>
 
 
@@ -331,11 +343,11 @@
 
                       <div class="container">
                         <span class="subheading">Pricing</span>
-                        <h2 class="heading-secondary">
-                            Eating well without breaking the breaking
-                          </h2>                        </h2>
+                        <h2 class="heading-secondary gg">
+                            Eating well without breaking the bank
+                        </h2>
                       </div>
-                      <div class="container grid grid--2--cols">
+                      <div class="container grid grid--2--cols margin-bottom-md">
                         <div class="pricing-plan pricing-plan--starter">
                           <header class="plan-header">
                         <p class="plan-name">Starter</p>
@@ -364,13 +376,13 @@
                           <ul class="list">
                             <li class="list-item t">
                               <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-                              <span>❌ Delivery is free</span>
+                              <span>✖ Get access to latest recipes</span>
                             </li>
                           </ul>    
                           <a href="#" class="btn">Start eating well</a>
 
                         </div>
-                        <div class="pricing-plan">
+                        <div class="pricing-plan pricing-plan--complete">
                           <header class="plan-header">
                           <p class="plan-name">Complete</p>
                           <p class="plan-price"><span>$</span>649</p>
@@ -380,13 +392,13 @@
                             <ul class="list">
                               <li class="list-item t">
                                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-                                <span>✔ 1 meal per day.</span>
+                                <span>✔ <strong>2 meals</strong> per day.</span>
                               </li>
                             </ul>
                             <ul class="list">
                               <li class="list-item t">
                                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-                                <span>✔ Order 24/7 </span>
+                                <span>✔ Order <strong>24/7</strong> </span>
                               </li>
                             </ul>
                             <ul class="list">
@@ -408,12 +420,221 @@
                             </div>
                           </div>
                         </div>
-  
+                        <div class="container grid">                            <aside class="plan-details">
+                                Prices include all applicable taxes. You can cancel at
+                                any time, Both plans include the following:
+                            </aside>
+                            </div>
                       </div>
+
+                        <div class="container grid grid--4--cols">
+                          <div class="feature"> 
+                            <ion-icon class="feature-icon" name="infinite-outline">
+                            </ion-icon>
+                            <p class="feature-title">Never cook again!</p>
+                            <p class="feature-text">
+                              Our subscriptions cover 365 days per year,
+                            even including major holidays.
+                            </p>
+                          </div>
+                          <div class="feature"> 
+                            <ion-icon class="feature-icon" name="nutrition-outline">
+                            </ion-icon>
+                            <p class="feature-title">Local and organic</p>
+                            <p class="feature-text">
+                                Our cooks use only local, fresh,
+                                and organic products to prepare your meals.    
+                            </p>
+                          </div>
+                          <div class="feature">
+                            <ion-icon class="feature-icon" name="leaf-outline">
+                            </ion-icon> 
+                            <p class="feature-title">No waste</p>
+                            <p class="feature-text">
+                              All our partners only use reusable containers to package
+                              all your meals.
+                            </p>
+                          </div>
+                          <div class="feature"> 
+                            <ion-icon class="feature-icon" name="pause-outline">
+                            </ion-icon>
+                            <p class="feature-title">Pause anytime</p>
+                            <p class="feature-text">
+                              Going on vacation? Just pause your subscription, and 
+                              we refund unused days.
+                            </p>
+                          </div>
+
+                        </div> 
+
                     </section>
-    </main>
-    
 
+                 <section class="section-cta">
+                  <div class="container">
+                    <div class="cta">
 
-  </body>
-</html>
+                    <div class="cta-text-box">
+                      <h2 class="heading-secondary">Get your first meal for free!</h2>
+                      <p class="cta-text">
+                        Healthy, tasty and hassle-free meals are 
+                        waiting for you. Start eating 
+                        well today. You can cancel or pause
+                        anytime. And the first meal is on us!
+                      </p>
+
+                      <form class="cta-form" action="#">
+                        <div>
+                        <label for="full-name">Full Name</label>
+                        <input
+                        id="full-name"
+                        type="text" 
+                        placeholder="John Smith"
+                        required
+                        />
+                         </div>
+
+                         <div>
+                        <label for="email-address">Email address</label>
+                        <input 
+                        id="email-address"
+                        type="email" 
+                        placeholder="me@example.com"
+                        required
+                        />
+                        </div>
+
+                        <div>
+                        <label for="select-where">Where did you hear from us?</label>
+                        <select id="selecct-where" required>
+                          <option value="">Please choose one option:</option>
+                          <option value="friends">Friends and family</option>
+                          <option value="podcasts">Podcasts</option>
+                          <option value="facebook-ad">Facebook ad</option>
+                          <option value="others">Others</option>
+                        </select>
+                        </div>
+                        
+                        <button class="btn btn--form">Sign up now</button> 
+                      </form>
+                    </div>
+                    <div class="cta-img-box"><span class="tege" 
+                      role="img" 
+                      aria-label="Woman enjoying food">ragatarbvimagegegeggegegegegegegegegeggegegeggeegegegegegeggegegegegegegegegegeg</span></div>
+                  </div>
+                  </div>
+                 </section>   
+                 </main> 
+
+                 <footer class="footer">
+                  <div class="container grid grid--5--cols">
+                    <div class="logo-col">
+                      <a href="#" class="footer-logo">
+                        <img  class="logo" alt="Omnifood logo" src="img folder/omnifood.jfif" title="Our brand's logo"
+                        />
+                      </a>
+
+                      <ul class="social-links">
+                        <li><a  class="footer-link" href="#">
+                          <ion-icon class="social-icon"
+                           name="logo-instagram">
+                          </ion-icon>
+                        </a></li>
+                        <li><a  class="footer-link" href="#">
+                          <ion-icon class="social-icon"
+                           name="logo-facebook">
+                          </ion-icon>
+                        </a></li>
+                        <li><a  class="footer-link" href="#">
+                          <ion-icon class="social-icon"
+                           name="logo-twitter">
+                          </ion-icon>
+                        </a></li>
+                      </ul>
+
+                      <p class="copyright">Copyright &copy; 2027 by Omnifood Inc. All rights reserved.</p>
+                    </div>
+                    <div class="address-col">
+                      <p class="footer-heading">Contact us</p>
+                      <address class="contacts">
+
+                        <p class="address">623 Harrison St., 2nd floor, San Francisco, 
+                          CA 94107 </p>
+                          <p>
+                            <a class="footer-link" href="tel:415-201-6370">415-201-6370</a>
+                          </p><br>
+                          <p><a class="footer-link" href="mailto:hello@omnifood.com">hello@omnifood
+                            .com</a>
+                          </p>
+                      </address>
+                    </div>
+                    <nav class="nav-col">
+                      <p class="footer-heading">Account</p>
+                      <ul class="footer-nav">
+                        <li><a class="footer-link" href="#">Create account</a></li>
+                        <li><a class="footer-link" href="#">Sign In</a></li>
+                        <li><a class="footer-link" href="#">iOS app</a></li>
+                        <li><a class="footer-link" href="#">Android app</a></li>
+                      </ul>
+                    </nav>
+                    
+                  
+                  <nav class="nav-col">
+                    <p class="footer-heading">Company</p>
+                    <ul class="footer-nav">
+                      <li><a class="footer-link" href="#">About Omnifood </a></li>
+                      <li><a class="footer-link" href="#">For Business</a></li>
+                      <li><a class="footer-link" href="#">Cooking Partners</a></li>
+                      <li><a class="footer-link" href="#">Careers</a></li>
+                    </ul>
+                    </nav>
+
+                    <nav class="nav-col">
+                    <p class="footer-heading">Resources</p>
+                    <ul class="footer-nav">
+                      <li><a class="footer-link" href="#">Recipe directory </a></li>
+                      <li><a class="footer-link" href="#">Help Center</a></li>
+                      <li><a class="footer-link" href="#">Privacy & terms</a></li>
+                    </ul>
+                  </nav>
+                  </div>
+                 </footer>
+
+                 <script>
+                  // <![CDATA[  <-- For SVG support
+                  if ('WebSocket' in window) {
+                    (function () {
+                      function refreshCSS() {
+                        var sheets = [].slice.call(document.getElementsByTagName("link"));
+                        var head = document.getElementsByTagName("head")[0];
+                        for (var i = 0; i < sheets.length; ++i) {
+                          var elem = sheets[i];
+                          var parent = elem.parentElement || head;
+                          parent.removeChild(elem);
+                          var rel = elem.rel;
+                          if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                          }
+                          parent.appendChild(elem);
+                        }
+                      }
+                      var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                      var address = protocol + window.location.host + window.location.pathname + '/ws';
+                      var socket = new WebSocket(address);
+                      socket.onmessage = function (msg) {
+                        if (msg.data == 'reload') window.location.reload();
+                        else if (msg.data == 'refreshcss') refreshCSS();
+                      };
+                      if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                        console.log('Live reload enabled.');
+                        sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                      }
+                    })();
+                  }
+                  else {
+                    console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+                  }
+                  // ]]>
+                </script>
+               </body>
+            </html
