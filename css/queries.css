@@ -1,0 +1,157 @@
+/* @media(max-width:34em){
+  * {
+    font-size: smaller;
+  }
+  .logo {
+    margin-left: 0;
+  }
+
+  .main-nav-link {
+    font-size: 1rem;
+  }
+
+  .section-hero {
+    max-width: 138rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9.6rem;
+    align-items: center;
+  }
+
+  .heading-primary  {
+    font-size: 2rem;
+    line-height: 1;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+} */
+
+
+/************************************8/
+/********************BELOW 1344PX smaller desktops******/
+
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/***********************************/
+/* BELOW 1200px (Landscape Tablets)*/
+/***********************************/
+
+@media (max-width:75em) {
+  html {
+    font-size: 56.25%;
+    background-size: cover;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+
+  .hero {
+    gap: 4.8rem;
+  }
+
+  .testimonials-container {
+    padding: 9.6rem 3.2rem;
+  }
+  .cta {
+    display: grid;
+    grid-template-columns: repeat(1fr, 1fr);
+    width: 103rem;
+  }
+}
+/**BELOW 944px*/
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 3.2rem;
+    gap: 6.4rem;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
+
+  .delivered-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+
+  .logos img {
+    height: 6.4rem;
+  }
+
+  .step-number {
+    font-size: 8.4rem;
+  }
+
+  .meal-content {
+    padding: 2.4rem 3.2rem 3.2rem 4.8rem;
+  }
+
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+}

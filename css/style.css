@@ -44,9 +44,9 @@ body {
 }
 
 .logo {
-  height: 20rem;
-  padding-left: 2rem;
-  margin-left: 2rem;
+  height: 10rem;
+  /* padding-left: 2rem;
+  margin-left: 2rem; */
   width: 20rem;
   margin-top: 1em;
 }
@@ -96,19 +96,36 @@ body {
   background-color: #cf711f;
 
 }
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close outline"] {
+  opacity: 0;
+}
+
 .section-hero {
   background-color:  #fdf2e9 ;
   padding: 9.6rem 0;
   padding-left: 11rem;
   padding-right: 6rem;
 }
-
+/* 
 @media (max-width: 600px) {
   .section-hero {
     background-color: #fdf2e9;
     background-size: contain;
   }
-}
+} */
 /* @media (max-width: 1200px) {
   .section-hero {
   }
