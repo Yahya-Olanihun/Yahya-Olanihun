@@ -7,13 +7,15 @@
 }
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 body {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serifs;
+  font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
   background-size: cover;
+  overflow-x: hidden;
 }
 
 /* .script {
@@ -31,6 +33,8 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #fdf2e9;
+
+  /* Because we want header to be sticky later */
   padding-left: 20rem;
   padding-top: 0;
   margin-right: 0.0rem;
@@ -39,8 +43,7 @@ body {
   height: 7rem;
   padding: 0 1rem;
   top: 0;
-  
-  
+  position: relative;
 }
 
 .logo {
@@ -101,6 +104,8 @@ body {
   border: none;
   background: none;
   cursor: pointer;
+
+  display: none;
 }
 
 .icon-mobile-nav {
@@ -110,7 +115,7 @@ body {
 }
 
 .icon-mobile-nav[name="close outline"] {
-  opacity: 0;
+  display: none;
 }
 
 .section-hero {
@@ -765,7 +770,8 @@ position: relative;
   outline: none;
   /* outline: 4px dotted #e67e22;
   outline-offset: 8px; */
-  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+  box-shadow: 0 0 0 0.8rem rgb(255, 255, 255);
+
 }
 
 .cta {
@@ -867,7 +873,7 @@ position: relative;
 
 .cta *:focus {
   outline: none;
-  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+  box-shadow: 0 0 0 0.8rem rgb(255, 255, 255);
 }
 
 

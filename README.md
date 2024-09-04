@@ -4,7 +4,8 @@
 - 💞️ I’m looking to collaborate on more frontend projects
 - 📫 How to reach me : yahyaolanihun2011@gmail.com
 - 😄 Pronouns: He
-- ⚡ Fun fact: ...
+- ⚡ Fun fact: I have a knack for beautiful pages shaa
+...
 
 <!---
 Yahya-Olanihun/Yahya-Olanihun is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.

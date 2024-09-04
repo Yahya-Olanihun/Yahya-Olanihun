@@ -8,14 +8,15 @@
   <link rel="icon" type="image/x-icon" href="img folder/omnifoodfavicon.webp">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/queries.css">
+
   <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
 
-  <header class="header nav-open">
+  <header class="header">
 
-     <a href="#">
+     <a href="#footer">
 
       <img  class="logo" alt="Omnifood logo" src="img folder/omnifood.jfif" title="Our brand's logo"
       />
@@ -26,9 +27,9 @@
                 
                 <li><a href="#howitworks" class="main-nav-link">How it works</a></li>   
                 <li><a href="#meals" class="main-nav-link">Meals</a></li>   
-                <li><a href="#pricing" class="main-nav-link">Testimonials</a></li>
-                <li><a href="#testimonials" class="main-nav-link">Pricing</a></li>   
-                <li><a href="#t's&c's" class="main-nav-link nav-cta">Try for free</a></li>
+                <li><a href="#testimonials" class="main-nav-link">Testimonials</a></li>
+                <li><a href="#pricing" class="main-nav-link">Pricing</a></li>   
+                <li><a href="#cta" class="main-nav-link nav-cta">Try for free</a></li>
       </ul>
                </nav>
 
@@ -92,7 +93,7 @@
   </div>
 </div>
   </section>
-        <section class="section-how">
+        <section class="section-how" id="howitworks">
           <div class="container">
             <span class="subheading">How it works</span>
             <h2 class="heading-secondary">
@@ -168,7 +169,7 @@
          </div>
       </div>
         </section>
-        <section class="section-meals">
+        <section class="section-meals" id="meals">
           <div class="container center-text">
             <span class="subheading">Meals</span>
             <h2 class="heading-secondary">
@@ -244,7 +245,7 @@
            </div>
         </section>
 
-        <section class="section-testimonials">
+        <section class="section-testimonials" id="testimonials">
           
           <div class="testimonials-container">
             <span class="subheading">Testimonials</span>
@@ -341,7 +342,7 @@
                     <section class="section-pricing">
 
                       <div class="container">
-                        <span class="subheading">Pricing</span>
+                        <span class="subheading" id="pricing">Pricing</span>
                         <h2 class="heading-secondary gg">
                             Eating well without breaking the bank
                         </h2>
@@ -468,7 +469,7 @@
 
                     </section>
 
-                 <section class="section-cta">
+                 <section class="section-cta" id="cta">
                   <div class="container">
                     <div class="cta">
 
@@ -483,11 +484,12 @@
 
                       <form class="cta-form" action="#">
                         <div>
-                        <label for="full-name">Full Name</label>
+                        <label for="fullname">Full Name</label>
                         <input
-                        id="full-name"
+                        id="fullname"
                         type="text" 
                         placeholder="John Smith"
+                        class="nameof"
                         required
                         />
                          </div>
@@ -504,7 +506,7 @@
 
                         <div>
                         <label for="select-where">Where did you hear from us?</label>
-                        <select id="selecct-where" required>
+                        <select id="select-where" required>
                           <option value="">Please choose one option:</option>
                           <option value="friends">Friends and family</option>
                           <option value="podcasts">Podcasts</option>
@@ -513,18 +515,20 @@
                         </select>
                         </div>
                         
-                        <button class="btn btn--form">Sign up now</button> 
+                        <button class="btn btn--form" onclick="clickMe()">Sign up now</button> 
                       </form>
                     </div>
                     <div class="cta-img-box"><span class="tege" 
                       role="img" 
-                      aria-label="Woman enjoying food">ragatarbvimagegegeggegegegegegegegegeggegegeggeegegegegegeggegegegegegegegegegeg</span></div>
+                      aria-label="Woman enjoying food">
+                      ragatarbvimagegegeggegegegegegegegegeggegegeggeegegegegegeggegegegegegegegegegeg
+                    </span></div>
                   </div>
                   </div>
                  </section>   
                  </main> 
 
-                 <footer class="footer">
+                 <footer class="footer" id="footer">
                   <div class="container grid grid--5--cols">
                     <div class="logo-col">
                       <a href="#" class="footer-logo">
@@ -598,42 +602,17 @@
                   </div>
                  </footer>
 
-                 <script>
-                  // <![CDATA[  <-- For SVG support
-                  if ('WebSocket' in window) {
-                    (function () {
-                      function refreshCSS() {
-                        var sheets = [].slice.call(document.getElementsByTagName("link"));
-                        var head = document.getElementsByTagName("head")[0];
-                        for (var i = 0; i < sheets.length; ++i) {
-                          var elem = sheets[i];
-                          var parent = elem.parentElement || head;
-                          parent.removeChild(elem);
-                          var rel = elem.rel;
-                          if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-                          }
-                          parent.appendChild(elem);
-                        }
-                      }
-                      var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-                      var address = protocol + window.location.host + window.location.pathname + '/ws';
-                      var socket = new WebSocket(address);
-                      socket.onmessage = function (msg) {
-                        if (msg.data == 'reload') window.location.reload();
-                        else if (msg.data == 'refreshcss') refreshCSS();
-                      };
-                      if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-                        console.log('Live reload enabled.');
-                        sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-                      }
-                    })();
+                 <!-- <script type="text/javascript">
+                  function clickMe() {
+                    alert(
+                      document.getElementById("fullname").innerHTML = 
+                      fullname.value + " " + "is now an Omnifood user"
+                      // document.getElementsByClassName("nameOf").namedItem =SVGUnitTypes
+                    )
                   }
-                  else {
-                    console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-                  }
-                  // ]]>
-                </script>
+                  
+                 </script> -->
+
+                
                </body>
             </html
