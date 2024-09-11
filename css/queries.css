@@ -264,12 +264,12 @@
 
 @media(max-width: 34em) {
 
-  * {
-    align-items: center;
+  /* * { */
+    /* align-items: center;
     justify-items: center;
     margin-left: 0.1rem;
-    grid-template-columns: 1fr;
-  }
+    grid-template-columns: 1fr; */
+  /* } */
 
 
   /* ****************** */
