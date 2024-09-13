@@ -8,6 +8,7 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Rubik", sans-serif;
@@ -16,6 +17,7 @@ body {
   color: #555;
   background-size: cover;
   overflow-x: hidden;
+  
 }
 
 /* .script {
@@ -26,6 +28,8 @@ body {
   background-color: brown;
   font-weight: 900;
   font-size: larger;
+  font-size: larger;
+  font-size: larger;
 } */
 
 .header  {
@@ -33,6 +37,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #fdf2e9;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
   /* Because we want header to be sticky later */
   padding-left: 20rem;
@@ -766,7 +771,7 @@ position: relative;
   /* margin: 9.6rem 4; */
 }
 
-*:focus {
+*:focus { 
   outline: none;
   /* outline: 4px dotted #e67e22;
   outline-offset: 8px; */

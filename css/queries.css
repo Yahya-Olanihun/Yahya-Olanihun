@@ -160,6 +160,7 @@
 
   .btn-mobile-nav {
     display: block;
+    z-index: 1000;
   }
 
   .main-nav {
@@ -280,10 +281,17 @@
     row-gap: 4.8rem;
   }
 
+  .subheading {
+    margin-left: 4rem;
+    text-align: center;
+  }
+
+
   .section-how {
     justify-content: center;
     align-items: center;
-    padding-right: 2rem;
+    padding-right: 9rem;
+    margin-right: 2rem;
   }
 
   .step-text-box {
