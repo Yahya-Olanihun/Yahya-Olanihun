@@ -20,6 +20,15 @@ body {
   
 }
 
+/* STICKY NAVIGATION */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
 /* .script {
   position: absolute;
   top: 2rem;
@@ -38,25 +47,26 @@ body {
   align-items: center;
   background-color: #fdf2e9;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  z-index: 100;
 
   /* Because we want header to be sticky later */
   padding-left: 20rem;
   padding-top: 0;
+  padding-bottom: 2rem;
   margin-right: 0.0rem;
 
   /* Because we want header to be sticky later*/
   height: 7rem;
-  padding: 0 1rem;
+  padding: 0rem 1rem;
   top: 0;
   position: relative;
 }
 
 .logo {
-  height: 10rem;
-  /* padding-left: 2rem;
-  margin-left: 2rem; */
-  width: 20rem;
-  margin-top: 1em;
+  height: 7rem;
+  padding-left: 0;
+  margin-left: 0;
+  width: 30rem;
 }
 
 .main-nav {
@@ -121,6 +131,19 @@ body {
 
 .icon-mobile-nav[name="close outline"] {
   display: none;
+}
+
+.stick {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.97);
+  bottom: 0;
+  z-index: 999;
+  box-shadow:  0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
 }
 
 .section-hero {
@@ -401,7 +424,7 @@ align-items: center;
   justify-content: space-around;
 }
 .logos img {
-  height: 10.2rem;
+  height: 5rem;
   width: 12.2rem;
   opacity: 50%;
 }

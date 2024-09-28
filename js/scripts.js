@@ -8,9 +8,9 @@
 
 ////////////////////////////////////////////////////////
 //Set current year
-const yearEl = document.querySelector(".btn-mobile-nav");
-const currentYear = newDate().getFullYear();
-yearNow.textContent = currentYear;
+// const yearEl = document.querySelector(".btn-mobile-nav");
+// const currentYear = newDate().getFullYear();
+// yearNow.textContent = currentYear;
 
 /////////////////////////////////////////////
 /// Make mobile navigation work
@@ -37,9 +37,22 @@ allLinks.forEach(function(link) {
     if (href === "#") window.scrollTo({
       top: 0,
       behavior: "smooth",
-    })
-  })
+    });
+    if (href !== "#" && href.startsWith('#')) {
+      const sectionEl = document.querySelector(href);
+      sectionEl.scrollIntoView({ behavior: "smooth"});
+    }
+
+    // Close the mobile navigation
+    if(link.classList.contains("main-nav-link"))
+      headerEl.classList.toggle("nav-open")
+  });
 })
+
+////////////////////////////
+// Sticky nav bar
+
+
 
 ///////////////////////////////////////////////
 // fixing flexbox gap property missing in some safari versions
